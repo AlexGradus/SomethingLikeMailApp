@@ -4,7 +4,7 @@ import {  setUser } from "../store/appReducer";
 export const login = (name:string)=>{
     return async (dispatch: (arg0: { type: string; user: any; }) => void) =>{
         try{
-            const response = await axios.post("backstarted-production.up.railway.app/api/auth/getin",{
+            const response = await axios.post("https://backstarted-production.up.railway.app/api/auth/getin",{
                 name 
             })
             

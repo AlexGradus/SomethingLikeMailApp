@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const sendMessage = async(name:string|null,message:[])=>{
   try{
-      const response = await axios.post("https://cooing-slip-production.up.railway.app/api/auth/message",{
+      const response = await axios.post("https://backstarted-production.up.railway.app/api/auth/message",{
         name,
         message
       })
@@ -18,7 +18,7 @@ export const sendMessage = async(name:string|null,message:[])=>{
 
 export const getMessage = async(name:string|null)=>{
   try{
-      const response = await axios.post("https://cooing-slip-production.up.railway.app/api/auth/user",{
+      const response = await axios.post("https://backstarted-production.up.railway.app/api/auth/user",{
         name
 
       })

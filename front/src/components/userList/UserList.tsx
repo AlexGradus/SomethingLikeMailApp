@@ -44,7 +44,7 @@ export default function UserList() {
     };
   const getUsers = async ()=>{
   try{
-    await axios.get("https://cooing-slip-production.up.railway.app/api/auth/users")
+    await axios.get("https://backstarted-production.up.railway.app/api/auth/users")
     .then(res => {
      
       setUserData(res.data.user);

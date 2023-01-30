@@ -27,7 +27,7 @@ function myFakeInterval()
  
   const getMessage = async(name:string|null)=>{
     try{
-        await axios.post("https://cooing-slip-production.up.railway.app/api/auth/user",{
+        await axios.post("https://backstarted-production.up.railway.app/api/auth/user",{
           name
   
         }).then(res => {
